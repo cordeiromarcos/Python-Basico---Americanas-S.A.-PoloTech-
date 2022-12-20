@@ -1,0 +1,24 @@
+#Encontrar numero perfeito. Um numero é perfeito se é igual à soma dos seus divisores positivos
+#diferentes dele mesmo
+
+num=int(input("Insira o número: "))
+divisores=0
+i=1
+
+#usando o for fica assim
+#for i in range (1,num):
+#    if num%i==0:
+#        divisores+=i
+
+while i<num:
+    if num%i==0:
+        divisores+=i
+    i+=1
+
+if num==divisores:
+    print(f"{num} é um número perfeito!")
+else:
+    print(f"{num} não é um número perfeito.")
+    
+    
+        
