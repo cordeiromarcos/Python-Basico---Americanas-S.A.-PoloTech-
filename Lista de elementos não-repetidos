@@ -1,0 +1,12 @@
+#crie uma funcao que recebe como argumento uma lista e retorna uma lista com os valores nao repetidos
+#da lista original
+
+def foo(lista):
+    final=[]
+    for i in lista:
+        if not (i in final):
+            final.append(i)
+    return final
+
+
+print(foo([1,2,5,6,8,5,2,3]))
