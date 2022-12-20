@@ -1,0 +1,19 @@
+#crie uma funcao para calcular o maximo de tres numeros, criando uma funcao auxiliar que calcula o maximo de
+#dois numeros. Recebe 3 numeros e retorna o maior
+
+def max2(a,b):
+  if a>b:
+    y = a
+    return y
+  else:
+    y = b
+    return y
+
+
+def max3(a,b,c):
+  y =   max2(a,b)
+  z =  max2(y,c)
+  return z
+
+print(max2(2,3))
+print(max3(2,3,4))
