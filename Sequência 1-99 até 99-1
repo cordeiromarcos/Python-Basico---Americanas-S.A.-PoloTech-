@@ -1,0 +1,9 @@
+##Crie um programa que mostre a sequência 1-99, 2-98... até 99-1
+
+num1=int(0)
+num2=int(100)
+
+while num1<99:
+    num1+=1
+    num2=num2-1
+    print(f"{num1}-----{num2}")
