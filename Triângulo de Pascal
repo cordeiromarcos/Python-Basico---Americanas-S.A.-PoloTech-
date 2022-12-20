@@ -1,0 +1,23 @@
+##Crie um programa que mostre o Triângulo de Pascal, e peça de o número de linhas a ser mostrado para o usuário
+
+def fatorial(x):
+    x_fatorial = 1
+    if x == 0:
+        return 1
+    else:
+        for numero in range(1, x + 1):
+            x_fatorial *= numero
+        return x_fatorial
+
+def binomio(n, p):
+    return int(fatorial(n) / (fatorial(p)*(fatorial(n - p))))
+
+def piramide_pascal(num):
+  for i in range(0, num):
+    print(" "*(num-i),end="")
+    linha = ""
+    for j in range(0, i + 1):
+      linha += f"{binomio(i, j)} "
+    print(linha)
+    
+piramide_pascal(8)
