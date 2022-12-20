@@ -1,0 +1,20 @@
+#Define quantos números divisíveis por "c" estão dentro do intervalo entre "a" e "b"
+
+a=int(input("Digite o valor de a: "))
+b=int(input("Digite o valor de b: "))
+c=int(input("Digite o valor de c: "))
+
+cont=0
+
+if a<b:
+    for i in range (a,b):
+        if i%c==0:
+            cont+=1
+    print(f"Entre {a} e {b} existem {cont} números divisíveis por {c}")
+elif b<a:
+    for i in range (b,a):
+        if i%c==0:
+            cont+=1
+    print(f"Entre {a} e {b} existem {cont} números divisíveis por {c}")
+else:
+    print("Os números são iguais, tente novamente.")
