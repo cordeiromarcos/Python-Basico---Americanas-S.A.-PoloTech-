@@ -1,0 +1,26 @@
+#CONJECTURA DE COLLATZ
+#Dado um número n>=1. Se n for ímpar, atualize n -> (3*n)+1
+#Se n for par, atualize n -> n/2
+
+#CONJECTURA DE COLLATZ
+#Dado um número n>=1. Se n for ímpar, atualize n -> (3*n)+1
+#Se n for par, atualize n -> n/2
+
+num=int(input("Escreva um número maior ou igual a 1: "))
+
+while num<1:
+    num=int(input("Digite um número válido, ou seja, maior ou igual a 1: "))
+    
+print(f"{num} -> ", end="")
+
+while num>1:
+    if num%2==0:
+        num=num/2
+    else:
+        num=(3*num)+1
+    
+    if num==1:
+        print(f"{num}")
+    else:
+        print(f" {num} -> ", end="")
+    
