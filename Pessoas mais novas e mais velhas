@@ -1,0 +1,29 @@
+##Crie um programa que lê a idade de 3 pessoas e indique qual a mais nova e qual a mais velha.
+
+
+id1=int(input("Qual a idade da primeira pessoa: "))
+id2=int(input("Qual a idade da segunda pessoa: "))
+id3=int(input("Qual a idade da terceira pessoa: "))
+
+if id1>id2 and id1>id3:
+    print("A primeira pessoa é a mais velha")
+elif id2>id1 and id2>id3:
+    print("A segunda pessoa é a mais velha.")
+elif id3>id1 and id3>id2:
+    print("A terceira pessoa é a mais velha.")
+
+if id1<id2 and id1<id3:
+    print("A primeira pessoa é a mais nova")
+elif id2<id1 and id2<id3:
+    print("A segunda pessoa é a mais nova.")
+elif id3<id1 and id3<id2:
+    print("A terceira pessoa é a mais nova.")
+
+if id1==id2:
+    print("A primeira e a segunda pessoas têm a mesma idade")
+elif id1==id3:
+    print("A primeira e a terceira pessoas têm a mesma idade")
+elif id3==id2:
+    print("A segunda e a terceira pessoas têm a mesma idade")
+
+
