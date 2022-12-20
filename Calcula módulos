@@ -1,0 +1,9 @@
+#Crie um programa que calcule o valor absoluto (em módulo) de um número inserido pelo usuário
+
+num=int(input("Digite um número: "))
+numabs=num
+
+if num<0:
+    numabs=num/-1
+
+print(f"O valor absoluto (em módulo) de {num} é {numabs}")
