@@ -1,0 +1,7 @@
+##Código que calcula e mostra todos os números múltiplos de 5 e divisíveis por 7 entre 1500 e 2700
+
+print("O conjunto de números divísiveis por 7 e múltiplos de 5 é:")
+
+for i in range (1500,2701):
+    if i%7==0 and i%5==0:
+        print(i)
